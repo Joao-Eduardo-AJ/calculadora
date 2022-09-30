@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/RobotoMono-Thin.ttf');
+}
+
+:root {
+    --fontColor: #fff;
+    --BgGradient1: #292e49;
+    --BgGradient2: #536976;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'RobotoMono', monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--fontColor);
+    background: linear-gradient(to left, var(--BgGradient1), var(--BgGradient2));
+}
+
+.calculator {
+    height: 320px;
+    width: 235px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 48px 48px 48px 48px 48px;
+}
